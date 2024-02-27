@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Login para Administradores</title>
+    <link rel="stylesheet" href="coop.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login Administrativo</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+
+    <script src="coop.js"></script>
+
+    <script>
+        // Verifica se a página atual não é a página de login
+        if (window.location.pathname !== '/index.html') {
+            // Redireciona para a página de login
+            window.location.href = '/index.html';
+        }
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
